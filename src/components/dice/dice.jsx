@@ -9,17 +9,14 @@ import { useState } from "react"
 
 function Dice() {
     const arrayOfDices = [dice1, dice2, dice3, dice4, dice5, dice6];
-    const randomDice = Math.floor(Math.random() * 6);
-    const [currentDice, setCurrentDice] = useState(arrayOfDices[randomDice]);  
-
-    const setRandomDice = () => {
-        const randomDice = Math.floor(Math.random() * 6);
-        setCurrentDice(arrayOfDices[randomDice]);
-    }
+    const randomDice = Math.floor(Math.random() * arrayOfDices.length);
+    const [currentDice, setCurrentDice] = useState(arrayOfDices[randomDice]);
 
     const toggleDice = () => {
         setCurrentDice(diceEmpty);
-        setTimeout(setRandomDice, 1000);
+        setTimeout(() => {
+            setCurrentDice(arrayOfDices[randomDice]);
+        }, 1000);
     }
 
     return (
