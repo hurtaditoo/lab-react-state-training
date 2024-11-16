@@ -1,3 +1,4 @@
+import Counter from "./components/counter/counter";
 import LikeButton from "./components/likebutton/likebutton";
 
 function App() {
@@ -7,6 +8,11 @@ function App() {
         <LikeButton />
         <LikeButton />
       </div>
+
+      <div className="d-flex p-4">
+        <Counter />
+      </div>
+
     </>
   );
 }
