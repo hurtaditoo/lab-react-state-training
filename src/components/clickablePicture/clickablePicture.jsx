@@ -14,7 +14,7 @@ function ClickablePicture() {
     }
 
     return (
-        <img src={currentImage} alt="Maxence Image" onClick={toggleImage} />
+        <img src={currentImage} alt="Maxence Image" onClick={toggleImage} style={{ width: "300px", height:"300px" }} />
     );
 }
 
