@@ -1,10 +1,13 @@
-import "./App.css";
+import LikeButton from "./components/likebutton/likebutton";
 
 function App() {
   return (
-    <div className="App">
-      <h1> LAB | React Training</h1>
-    </div>
+    <>
+      <div className="d-flex p-3">
+        <LikeButton />
+        <LikeButton />
+      </div>
+    </>
   );
 }
 
