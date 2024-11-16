@@ -3,6 +3,7 @@ import Dice from "./components/dice/dice"
 import ClickablePicture from "./components/clickablePicture/clickablePicture";
 import Counter from "./components/counter/counter";
 import LikeButton from "./components/likeButton/likeButton";
+import DiscoButton from "./components/discoButton/discoButton";
 
 function App() {
   return (
@@ -33,6 +34,11 @@ function App() {
             "https://randomuser.me/api/portraits/men/2.jpg"
           ]}
         />
+      </div>
+
+      <div className="d-flex p-4">
+        <DiscoButton />
+        <DiscoButton />
       </div>
 
     </>
