@@ -1,5 +1,6 @@
+import ClickablePicture from "./components/clickablepicture/clickablepicture";
 import Counter from "./components/counter/counter";
-import LikeButton from "./components/likebutton/likebutton";
+import LikeButton from "./components/likeButton/likeButton";
 
 function App() {
   return (
@@ -11,6 +12,10 @@ function App() {
 
       <div className="d-flex p-4">
         <Counter />
+      </div>
+
+      <div className="d-flex p-4">
+        <ClickablePicture />
       </div>
 
     </>
